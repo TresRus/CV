@@ -52,22 +52,18 @@
 
 		
 \newcommand{\EducationEntry}[4]{
-		\noindent{ \textbf{#1} \hfill      % Study
-		\colorbox{Black}{%
-			\parbox{6.5em}{%
-			\hfill\color{White}\textbf{#2}}} \par  % Duration
-		\noindent \textit{#3} \par   % School
-		\hangindent=2em\hangafter=0 \small #4 % Description
-		\hangindent=2em \normalsize \par}}
-		
-		
-\newcommand{\SchoolEntry}[3]{
-		\noindent \textbf{#1} \hfill      % Study
-		\colorbox{Black}{%
-			\parbox{6.5em}{%
-			\hfill\color{White}\textbf{#2}}} \par  % Duration
-		\noindent\hangindent=2em\hangafter=0 \small #3 % Description
-		\normalsize \par}
+		\noindent{
+			\textbf{#1} \textit{#3} \hfill      % Study
+			\colorbox{Black}{%
+				\parbox{6.5em}{%
+					\hfill\color{White}\textbf{#2}
+				}
+			}
+			\par  % Duration
+			\hangindent=1em\hangafter=0 \small #4 % Description
+			\hangindent=1em \normalsize \par
+		}
+}
 		
 		
 \newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
@@ -107,8 +103,10 @@
 {   
     Thesis submitted December 2020, awaiting viva date. \newline
     Title: \textit{Development of Apparatus for Ice Nucleation Studies.}\\
+    \\
     The fundamentals of what makes a good ice nucleator remain poorly understood at the nanoscale. In my PhD I developed three experimental methods:
     \begin{itemize}
+        \setlength\itemsep{0em}
         \item A novel way of automating a standard experimental technique (\href{https://amt.copernicus.org/articles/13/2785/2020/}{published})
         \item An updated version of an automated lag time apparatus (\href{https://aip.scitation.org/doi/10.1063/1.1145586}{ALTA}) for ice nucleation studies 
         \item An environmental chamber for freezing acoustically levitated water droplets.
@@ -128,7 +126,7 @@
 }
 %\sepspace
 
-\SchoolEntry{Alleyn's School}{2005-2012}
+\EducationEntry{Alleyn's School}{2005-2012}{}
 {
     A-levels: Physics A*, Maths A*, Economics A (AS-level Politics A) \\
     GCSEs: 6A*, 3A, 1B
